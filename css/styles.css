@@ -2,6 +2,7 @@
   --basic-text-colour: #757575;
   --secondary-text-colour: #212121;
   --logo-text-color:#000000;
+  --address-text-colour:  rgba(255, 255, 255, 0.6);
   --accent-colour: #2196f3;
   --basic-text-or-background: #ffffff;
   --secondary-background: #2f303a;
@@ -10,13 +11,12 @@
 }
 
 body {
-  background-color: var(--basic-background);
+  background-color: var(--basic-text-or-background);
   font-family: 'Roboto', sans-serif;
   color: var(--basic-text-colour);
   letter-spacing: 0.03em;
   font-size: 14px;
   line-height: 1.7;
-  font-style: 400;
 }
 
 .logo,
@@ -66,10 +66,6 @@ body {
 
 .contacts .contacts-link:hover,
 .contacts .contacts-link:focus {
-  color: var(--accent-colour);
-}
-
-.contacts .contacts-link-mail {
   color: var(--accent-colour);
 }
 
@@ -156,7 +152,7 @@ body {
 .footer-address {
   font-size: 14px;
   line-height: 1.7;
-  color: var(--basic-text-or-background);
+  color:var(--address-text-colour);
   text-decoration: none;
   font-style: normal;
 }
@@ -164,9 +160,10 @@ body {
 .footer-list {
   list-style: none;
 }
+
 .footer-address:hover,
 .footer-address:focus {
-  color: var(--accent-colour);
+  color: var(--basic-text-or-background);
 }
 
 .our-works {
@@ -181,6 +178,7 @@ body {
   font-size: 16px;
   line-height: 1.6;
   cursor: pointer;
+  border: transparent;
 }
 
 .categories-btn:hover,
