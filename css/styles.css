@@ -195,7 +195,10 @@ body {
 .list,
 .site-list,
 .progect {
-  list-style: none;
+  list-style: none; 
+}
+.progects .progect-link {
+  text-decoration: none;
 }
 
 .progect-img-header {
@@ -204,10 +207,12 @@ body {
   line-height: 2;
   letter-spacing: 0.06em;
   color: var(--secondary-text-colour);
+ 
 }
 
 .progect-img-paragraf {
   color: var(--basic-text-colour);
   font-size: 16px;
   line-height: 1.9;
+  
 }
